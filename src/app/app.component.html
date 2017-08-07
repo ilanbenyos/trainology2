@@ -1,0 +1,11 @@
+<span [ngClass]="'title'">
+  {{title}}
+</span>
+  <nav>
+      <ul>
+          <li *ngFor="let contact of contacts" > 
+              <app-contact [contact]="contact" ></app-contact>
+          </li>
+      </ul>
+  </nav>
+

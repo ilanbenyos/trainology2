@@ -1,0 +1,12 @@
+
+<!--<ng-content></ng-content>-->
+<div (click)="clicked($event)" [ngClass]="'list-item list'">
+      <div [ngClass]="contact.type === 'Group' ? 'item contact-group' : 'item'">
+          {{contact.name}}
+      </div>
+            <ul *ngIf="contact.contacts && isShowMe"  [@myAnimation] >
+                <li  *ngFor="let contact of contact.contacts"> 
+                        <app-contact [contact]="contact" ></app-contact>
+                </li>
+            </ul>
+</div>

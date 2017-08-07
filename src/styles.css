@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+ul{
+    list-style-type: none;
+}
+.list-item{
+    font-size:25px;
+}
+.item:hover {
+    background-color: #84dded;
+    cursor:default}
+.item {
+    transition: 0.3s ;
+    margin-bottom: 7px;
+}
+.title{
+    font-size:3em;
+    font-weight: bold;
+}
+.contact-group:hover{
+    background-color: #35FFA6;
+    cursor:pointer;
+}
+.contact-group{
+    transition: 0.3s ;
+}
+*{
+    /*outline: 1px solid red;*/
+}
